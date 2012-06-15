@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Lab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
+  <Id>DOMFeaturesAndECMAScript5</Id>
+  <Author>
+    <Blog>
+    </Blog>
+    <Email>
+    </Email>
+    <Name></Name>
+  </Author>
+  <Description>In this lab, you will walk through two new features supported by Internet Explorer 10 that were introduced in ECMAScript 5: strict mode and Typed arrays. You will also see how to use some of the new Document Object Model (DOM) improvements, like advanced hit-testing APIs, media query listeners, and pointer and gesture events.
+  </Description>
+  <Document ConversionType="Html">.\HOL.md</Document>
+  <Title>DOM Features and ECMAScript5</Title>
+  <Version>1.0.3</Version>
+  <Source>.\Source</Source>
+  <!-- <DependencyChecker>.\Source\Setup\Dependencies.depi</DependencyChecker> -->
+  <!-- <Technologies>
+    <Technology>Internet Explorer 10</Technology>
+  </Technologies> -->
+  <CustomProperties>    
+	<Property Name="GitHubRepository" Value="https://github.com/Microsoft-Web/HOL-DOMFeaturesAndECMAScript5" />
+  </CustomProperties>
+</Lab>
