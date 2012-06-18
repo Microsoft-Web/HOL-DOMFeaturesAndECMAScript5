@@ -3,7 +3,9 @@
 ## Overview ##
 
 Internet Explorer 10 contains lot of new Document Object Model (DOM) features and improvements to support ECMAScript 5, including advanced hit-testing APIs, media query listeners, and pointer and gesture events.
+
 In this lab, we see how to use some of the new features, such as “**strict mode**”, which helps us avoid common errors in JavaScript by throwing errors while in the interpretation phase.
+
 We also see how to use one of the advanced hit-testing APIs - **msElementsFromPoint** - to obtain the elements where we clicked.
 Finally, we use the **createContextualFragment** method to pre-parse an object before it is inserting it into another object. In our case, we add an object into the HTML body element.
 
@@ -45,8 +47,11 @@ Estimated time to complete this lab: **30-45 minutes**.
 ### Exercise 1: Document Object Model (DOM) ###
 
 This exercise focuses on two of the several new Document Object Model (DOM) features.
+
 **CSSOM View** introduces a method called **elementFromPoint**, which returns the element under an x- and y-coordinate in a viewport. This works well for single elements. For example, passing coordinates of an element, this method returns this element. 
+
 Internet Explorer 10, uses JavaScript to introduces the **msElementsFromPoint** method, which returns a node list of all elements that intersect the point at the given x- and y-coordinates or a rectangular area, respectively.
+
 The **createContextualFragment** method allows us to parse a string into a **DocumentFragment** object. Unlike inserting markup into innerHTML, the method create pre-parsed content to be added or inserted into a document when needed later.
 
 <a name="Ex1Task1" />
@@ -313,9 +318,11 @@ This lab demonstrates the importance of using "ECMAScript 5 strict mode".  ECMAS
 
 1. Find the **addEyes** function declaration and remove the duplicated **assets** parameter
 
+	<!-- strike:2;mark:3 -->
 	````CSS
 	...
 	addEyes: function (assets, assets) {
+	addEyes: function (assets) {
 		 var asset = splitAndTrimAsset(assets, 2);
 	 
 		 if (asset !== null) {
